@@ -16,3 +16,7 @@ The dev server runs on http://localhost:8080.
 ```sh
 npm run build
 ```
+
+## Deployment
+
+Deployed on [Vercel](https://vercel.com). Every push to `main` triggers a production deployment (see `vercel.json`).
