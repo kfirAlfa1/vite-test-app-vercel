@@ -7,6 +7,8 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
+    // Allow requests from the sandbox preview proxy hosts.
+    allowedHosts: true,
   },
   plugins: [react()],
   resolve: {
