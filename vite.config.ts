@@ -11,6 +11,10 @@ export default defineConfig({
     allowedHosts: true,
   },
   plugins: [react()],
+  define: {
+    // Only expose whether the key is set, never the key itself.
+    __GEMINI_KEY_CONFIGURED__: JSON.stringify(Boolean(process.env.GEMINI_API_KEY)),
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
